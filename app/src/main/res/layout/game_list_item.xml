@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingRight="@dimen/float_activity_horizontal_margin">
+
+        <ImageView
+                   android:layout_width="35dp"
+                   android:layout_height="35dp"
+                   android:id="@+id/im_icon"
+                   android:layout_centerVertical="true"
+                   android:background="@mipmap/fw_pic_default"
+            />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_name"
+                  tools:text="大话西游"
+                  android:layout_toRightOf="@+id/im_icon"
+                  android:layout_centerVertical="true"
+                  android:textSize="@dimen/normal_text_size"
+                  android:layout_marginLeft="15dp"
+            />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tv_desc"
+                  tools:text="7.5折起"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:textColor="#ff6b18"
+                  android:textSize="11sp"
+                  android:layout_marginRight="4dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#939393"/>
+    </RelativeLayout>
+</RelativeLayout>
