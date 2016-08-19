@@ -32,7 +32,7 @@ public class GamePresenter implements IGamePresenter {
     }
 
     @Override
-    public void fresh() {
+    public void refresh() {
         mGameManager.fetchDataFromServer();
     }
     @Subscribe(threadMode = ThreadMode.MAIN)

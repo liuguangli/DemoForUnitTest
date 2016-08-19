@@ -5,5 +5,5 @@ package com.dalimao.demoforunittest;
  */
 public interface IGamePresenter {
     void start();
-    void fresh();
+    void refresh();
 }

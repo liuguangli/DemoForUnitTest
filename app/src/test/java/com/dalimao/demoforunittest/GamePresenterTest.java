@@ -20,7 +20,6 @@ public class GamePresenterTest {
     private IGameListView gameListView;
     private GamePresenter gamePresenter;
     @Before
-
     public void setUp() throws Exception {
         //Log 是 Android 的 API,Unit test 模式下关闭使用
         LogUtil.setDebug(false);
@@ -54,7 +53,7 @@ public class GamePresenterTest {
 
     @Test
     public void testFresh() throws Exception {
-        gamePresenter.fresh();
+        gamePresenter.refresh();
         /**
          * 预期会依次执行 gameManager.fetchDataFromServer() 方法
          */
